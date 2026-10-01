@@ -1,0 +1,174 @@
+
+.projects {
+  display: flex;
+  align-items: center;
+}
+
+.projects h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+
+  padding: 28px;
+
+  border: 1px solid #334155;
+  border-radius: 12px;
+
+  background: #111c31;
+
+  transition: 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  border-color: #64748b;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.project-header h3 {
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+
+.project-type {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.github-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 24px;
+  color: #cbd5e1;
+
+  transition: 0.3s ease;
+}
+
+.github-link:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
+.project-description {
+  color: #94a3b8;
+
+  line-height: 1.7;
+  font-size: 15px;
+
+  margin-bottom: 25px;
+}
+
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  margin-bottom: 28px;
+}
+
+.technology {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 7px 10px;
+
+  border: 1px solid #475569;
+  border-radius: 6px;
+
+  color: #cbd5e1;
+  font-size: 13px;
+
+  transition: 0.3s ease;
+}
+
+.technology:hover {
+  background: #1e293b;
+  color: #e2e8f0;
+}
+
+.technology-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 18px;
+  font-size: 17px;
+}
+
+.project-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  align-self: flex-start;
+
+  padding: 10px 16px;
+
+  border: 1px solid #64748b;
+  border-radius: 6px;
+
+  color: #e2e8f0;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+.project-button:hover {
+  background: #1e293b;
+  transform: translateY(-2px);
+}
+
+.project-button span {
+  font-size: 16px;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 500px) {
+  .projects h2 {
+    font-size: 32px;
+  }
+
+  .project-card {
+    padding: 22px;
+  }
+
+  .project-header h3 {
+    font-size: 21px;
+  }
+
+  .project-description {
+    font-size: 14px;
+  }
+}

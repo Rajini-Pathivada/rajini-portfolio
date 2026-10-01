@@ -1,0 +1,120 @@
+
+.achievements {
+  display: flex;
+  align-items: center;
+}
+
+.achievements h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.achievement-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+
+  padding: 30px;
+
+  border: 1px solid #334155;
+  border-radius: 12px;
+
+  background: #111c31;
+
+  transition: 0.3s ease;
+}
+
+.achievement-card:hover {
+  transform: translateY(-4px);
+  border-color: #64748b;
+}
+
+.achievement-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 55px;
+  height: 55px;
+
+  flex-shrink: 0;
+
+  border: 1px solid #475569;
+  border-radius: 10px;
+
+  color: #cbd5e1;
+  font-size: 30px;
+}
+
+.achievement-content {
+  flex: 1;
+}
+
+.achievement-content h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.achievement-content p {
+  max-width: 800px;
+
+  color: #94a3b8;
+
+  font-size: 15px;
+  line-height: 1.7;
+
+  margin-bottom: 20px;
+}
+
+.leetcode-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 10px 16px;
+
+  border: 1px solid #64748b;
+  border-radius: 6px;
+
+  color: #e2e8f0;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+.leetcode-button:hover {
+  background: #1e293b;
+  transform: translateY(-2px);
+}
+
+.leetcode-button span {
+  font-size: 16px;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .achievement-card {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .achievements h2 {
+    font-size: 32px;
+  }
+
+  .achievement-card {
+    padding: 22px;
+  }
+
+  .achievement-content h3 {
+    font-size: 20px;
+  }
+
+  .achievement-content p {
+    font-size: 14px;
+  }
+}
